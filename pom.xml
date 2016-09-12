@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+ 
+ 
+  <groupId>org.amir.test</groupId>
+  <artifactId>pr2</artifactId>
+  <version>0.12-SNAPSHOT</version>
+
+  <packaging>pom</packaging>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.5.0</version>
+        
+		<executions>
+          <execution>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+          </execution>
+        </executions>
+        
+		<configuration>
+          <executable>hello</executable>
+          <!-- optional -->
+          <workingDirectory>/tmp</workingDirectory>
+          <arguments>
+            <argument>artifactId / version = ${project.artifactId}${project.version}</argument>
+            <argument>scm url = ${project.scm.url}</argument>            
+          </arguments>
+        </configuration>
+		
+      </plugin>
+    </plugins>
+  </build>
+
+  
+	<!-- 
+	  mvn - - batch-mode release:update-versions  
+	 -->	 
+	 
+    <scm>
+		<url>scm:git:git@github.com:amirmendelson/pr2.git</url>
+		<connection>scm:git:git@github.com:amirmendelson/pr2.git</connection>
+		<developerConnection>scm:git:git@github.com:amirmendelson/pr2.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>    
+
+
+</project>
+
