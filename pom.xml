@@ -5,7 +5,7 @@
  
   <groupId>org.amir.test</groupId>
   <artifactId>pr2</artifactId>
-  <version>0.15-snapshot</version>
+  <version>0.15</version>
 
   <packaging>pom</packaging>
   
@@ -70,7 +70,8 @@
             <url>https://github.com/amirmendelson/pr2.git</url>
 		    <connection>scm:git:https://github.com/amirmendelson/pr2.git</connection>
 		    <developerConnection>scm:git:https://github.com/amirmendelson/pr2.git</developerConnection> 
-        </scm>	
+          <tag>pr2-0.15</tag>
+  </scm>	
 	
 
 	
