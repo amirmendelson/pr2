@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
  
- 
+  <!-- on develop -->
   <groupId>org.amir.test</groupId>
   <artifactId>pr2</artifactId>
-  <version>0.26-SNAPSHOT</version>
+  <version>0.1.3-SNAPSHOT</version>
 
   <packaging>pom</packaging>
   
@@ -47,6 +47,12 @@
 		  <version>1.8.1</version>
 		</dependency>
 	   </dependencies>
+
+        <configuration>
+          <preparationGoals>exec:exec</preparationGoals>
+        </configuration>
+	   
+	   
 	  </plugin>
 
 
@@ -54,7 +60,7 @@
   </build>
 
   
-	<!-- 
+	<!--  
 	  mvn - - batch-mode release:update-versions  
 	 -->	 
     <!--	 
