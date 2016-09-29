@@ -5,7 +5,7 @@
  
   <groupId>org.amir.test</groupId>
   <artifactId>pr2</artifactId>
-  <version>0.17-SNAPSHOT</version>
+  <version>0.1.1-SNAPSHOT</version>
 
   <packaging>pom</packaging>
   
