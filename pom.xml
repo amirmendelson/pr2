@@ -88,7 +88,7 @@
 
      		<dependency>
 				<groupId>org.amd.test</groupId>
-				<artifactId>OrgM</artifactId>
+				<artifactId>pr1</artifactId>
 				<version>0.88-SNAPSHOT</version>
  			</dependency>	
 
