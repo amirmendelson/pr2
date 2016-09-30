@@ -5,7 +5,7 @@
   <!-- on develop -->
   <groupId>org.amir.test</groupId>
   <artifactId>pr2</artifactId>
-  <version>0.1.21-snapshot</version>
+  <version>0.1.21</version>
 
   <packaging>pom</packaging>
   
