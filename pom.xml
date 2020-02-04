@@ -53,6 +53,8 @@
 	</plugins>
   </build>
 
+
+    <!-- test comment--> 
   
 	<!-- 
 	  mvn - - batch-mode release:update-versions  
